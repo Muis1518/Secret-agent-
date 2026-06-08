@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Are You Safe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="safe-page">
+  <main class="page-wrap">
+    <header class="safe-header">
+      <div class="title-nav">
+        <h1>ARE YOU<br>SAFE?</h1>
+
+        <nav class="nav-buttons">
+          <a href="who-are-they.html" class="outline-btn">WHO ARE THEY</a>
+          <a href="add.html" id="newLeakBtn" class="outline-btn">NEW LEAK</a>
+          <button id="resetData" class="reset-btn">RESET DATA</button>
+        </nav>
+      </div>
+      
+
+      <aside class="ranking">
+        <div class="ranking-content">
+          <h3>RANKING</h3>
+          <div id="rankingList"></div>
+        </div>
+        <div class="ranking-bottom">
+          <div id="bottomRanking"></div>
+        </div>
+      </aside>
+    </header>
+
+    <section id="timeline" class="safe-leaks"></section>
+  </main>
+
+  <footer class="bottom-bar">
+    <div class="profiles" id="profileBar"></div>
+  </footer>
+
+  <button id="infoBtn" class="info-btn" type="button">i</button>
+
+<div id="infoModal" class="info-modal hidden">
+  <div class="info-card">
+    <button id="infoClose" class="modal-close" type="button">×</button>
+    <div id="infoContent"></div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

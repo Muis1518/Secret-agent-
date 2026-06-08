@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who Are They</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="who-page">
+  <main class="page-wrap">
+    <header class="safe-header">
+      <div class="title-nav">
+        <h1>WHO ARE<br>THEY</h1>
+        <nav class="nav-buttons">
+          <a href="are-you-safe.html" class="outline-btn dark">ARE YOU SAFE?</a>
+          
+        </nav>
+      </div>
+
+      <!-- <aside class="ranking small-ranking">
+        <div class="ranking-content white-card">
+          <h3>RANKING</h3>
+          <div id="voteRanking"></div>
+        </div>
+      </aside> -->
+      <div class="hint-box">
+        <h3>HINT</h3>
+        <p id="hintText">
+          No hint available yet.
+        </p>
+      </div>
+    </header>
+
+    <section id="whoContainer" class="who-grid"></section>
+  </main>
+
+  <footer class="bottom-bar dark-bottom">
+    <div class="profiles" id="profileBar"></div>
+  </footer>
+<!-- vote van de mensen  -->
+  <div id="imageModal" class="image-modal hidden">
+    <button class="modal-close" type="button">✕</button>
+    <img id="modalImage" alt="" />
+  </div>
+
+  <div id="voteModal" class="vote-modal hidden">
+  <div class="vote-card">
+    <button id="voteClose" class="modal-close" type="button">✕</button>
+
+    <img id="votePersonImage" class="vote-person-image" src="" alt="">
+    <p id="votePersonName" class="vote-person-name"></p>
+
+    <div class="vote-controls">
+      <button id="prevVotePerson" type="button">‹</button>
+      <button id="confirmVote" type="button">VOTE</button>
+      <button id="nextVotePerson" type="button">›</button>
+    </div>
+  </div>
+</div>
+
+<!-- evedince input -->
+
+<div id="evidenceModal" class="evidence-modal hidden">
+  <div class="evidence-card">
+    <button id="evidenceClose" class="modal-close" type="button">✕</button>
+
+    <h2>EVIDENCE</h2>
+    <p>Add new information to the system.</p>
+
+    <label for="evidenceText">Insert Text</label>
+    <input id="evidenceText" type="text" placeholder="Enter evidence text">
+
+    <label for="evidenceImage">Upload Image</label>
+    <label class="evidence-upload-box" for="evidenceImage">
+      Click or drag file here
+      <input id="evidenceImage" type="file" accept="image/*">
+    </label>
+
+    <button id="saveEvidence" type="button" class="save-evidence-btn">
+      Save evidence
+    </button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

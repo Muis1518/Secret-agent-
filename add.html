@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Leak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="new-leak-page">
+  <form id="leakForm" class="new-leak-card">
+    <h1>NEW<br>LEAK</h1>
+
+    <p class="sub">Add new information to the system.</p>
+
+    <div class="form-group">
+      <label>Victim name</label>
+      <select id="slachtoffer" required>
+        <option value="">Select victim name</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Leak type</label>
+      <select id="description" required>
+        <option value="">Select leak type</option>
+      <option>An unlocked laptop could give someone direct access to accounts or systems.</option>
+      <option>Visible information could be used to gain trust or target someone.</option>
+      <option>Someone could send messages or perform actions using this account.</option>
+      <option>Internal systems and software are exposed.</option>
+      <option>Personal information is exposed in the image.</option>
+      <option>Open files and documents are exposed.</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input id="date" type="date" required />
+    </div>
+
+    <div class="form-group">
+      <label>Upload image</label>
+      <label class="upload-box" for="photo">
+        <span id="fileLabel">Click or drag file here</span>
+        <input id="photo" type="file" accept="image/*" required />
+      </label>
+    </div>
+
+    <button type="submit">SAVE LEAK</button>
+
+    <p class="warning">Authorized agents only.</p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
